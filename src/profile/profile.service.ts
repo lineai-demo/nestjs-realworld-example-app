@@ -1,11 +1,9 @@
-import { HttpStatus, Injectable} from '@nestjs/common';
+import { HttpException, HttpStatus, Injectable} from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Repository } from 'typeorm';
+import { DeepPartial, Repository } from 'typeorm';
 import { UserEntity } from '../user/user.entity';
-import { DeepPartial } from 'typeorm/common/DeepPartial';
 import { ProfileRO, ProfileData } from './profile.interface';
 import {FollowsEntity} from "./follows.entity";
-import {HttpException} from "@nestjs/common/exceptions/http.exception";
 
 @Injectable()
 export class ProfileService {
@@ -21,14 +19,14 @@ export class ProfileService {
   }
 
   async findOne(options?: DeepPartial<UserEntity>): Promise<ProfileRO> {
-    const user = await this.userRepository.findOne(options);
+    const user = await this.userRepository.findOne({where: options as any});
     delete user.id;
     if (user) delete user.password;
     return {profile: user};
   }
 
   async findProfile(id: number, followingUsername: string): Promise<ProfileRO> {
-    const _profile = await this.userRepository.findOne( {username: followingUsername});
+    const _profile = await this.userRepository.findOne({where: {username: followingUsername}});
 
     if(!_profile) return;
 
@@ -38,7 +36,7 @@ export class ProfileService {
       image: _profile.image
     };
 
-    const follows = await this.followsRepository.findOne( {followerId: id, followingId: _profile.id});
+    const follows = await this.followsRepository.findOne({where: {followerId: id, followingId: _profile.id}});
 
     if (id) {
       profile.following = !!follows;
@@ -52,14 +50,14 @@ export class ProfileService {
       throw new HttpException('Follower email and username not provided.', HttpStatus.BAD_REQUEST);
     }
 
-    const followingUser = await this.userRepository.findOne({username});
-    const followerUser = await this.userRepository.findOne({email: followerEmail});
+    const followingUser = await this.userRepository.findOne({where: {username}});
+    const followerUser = await this.userRepository.findOne({where: {email: followerEmail}});
 
     if (followingUser.email === followerEmail) {
       throw new HttpException('FollowerEmail and FollowingId cannot be equal.', HttpStatus.BAD_REQUEST);
     }
 
-    const _follows = await this.followsRepository.findOne( {followerId: followerUser.id, followingId: followingUser.id});
+    const _follows = await this.followsRepository.findOne({where: {followerId: followerUser.id, followingId: followingUser.id}});
 
     if (!_follows) {
       const follows = new FollowsEntity();
@@ -83,7 +81,7 @@ export class ProfileService {
       throw new HttpException('FollowerId and username not provided.', HttpStatus.BAD_REQUEST);
     }
 
-    const followingUser = await this.userRepository.findOne({username});
+    const followingUser = await this.userRepository.findOne({where: {username}});
 
     if (followingUser.id === followerId) {
       throw new HttpException('FollowerId and FollowingId cannot be equal.', HttpStatus.BAD_REQUEST);
