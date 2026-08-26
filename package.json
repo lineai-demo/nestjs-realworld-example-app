@@ -42,7 +42,7 @@
     "reflect-metadata": "^0.1.14",
     "rxjs": "^6.6.7",
     "slug": "^1.1.0",
-    "swagger-ui-express": "^4.1.4",
+    "swagger-ui-express": "^4.6.3",
     "typeorm": "^0.2.24",
     "typescript": "^3.8.3"
   },
