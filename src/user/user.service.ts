@@ -1,14 +1,12 @@
-import { Injectable } from '@nestjs/common';
+import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Repository, getRepository, DeleteResult } from 'typeorm';
+import { Repository, DeleteResult } from 'typeorm';
 import { UserEntity } from './user.entity';
 import {CreateUserDto, LoginUserDto, UpdateUserDto} from './dto';
 const jwt = require('jsonwebtoken');
 import { SECRET } from '../config';
 import { UserRO } from './user.interface';
 import { validate } from 'class-validator';
-import { HttpException } from '@nestjs/common/exceptions/http.exception';
-import { HttpStatus } from '@nestjs/common';
 import * as argon2 from 'argon2';
 
 @Injectable()
@@ -23,7 +21,7 @@ export class UserService {
   }
 
   async findOne({email, password}: LoginUserDto): Promise<UserEntity> {
-    const user = await this.userRepository.findOne({email});
+    const user = await this.userRepository.findOne({where: {email}});
     if (!user) {
       return null;
     }
@@ -39,7 +37,7 @@ export class UserService {
 
     // check uniqueness of username/email
     const {username, email, password} = dto;
-    const qb = await getRepository(UserEntity)
+    const qb = this.userRepository
       .createQueryBuilder('user')
       .where('user.username = :username', { username })
       .orWhere('user.email = :email', { email });
@@ -72,7 +70,7 @@ export class UserService {
   }
 
   async update(id: number, dto: UpdateUserDto): Promise<UserEntity> {
-    let toUpdate = await this.userRepository.findOne(id);
+    let toUpdate = await this.userRepository.findOne({where: {id}});
     delete toUpdate.password;
     delete toUpdate.favorites;
 
@@ -85,7 +83,7 @@ export class UserService {
   }
 
   async findById(id: number): Promise<UserRO>{
-    const user = await this.userRepository.findOne(id);
+    const user = await this.userRepository.findOne({where: {id}});
 
     if (!user) {
       const errors = {User: ' not found'};
@@ -96,7 +94,7 @@ export class UserService {
   }
 
   async findByEmail(email: string): Promise<UserRO>{
-    const user = await this.userRepository.findOne({email: email});
+    const user = await this.userRepository.findOne({where: {email: email}});
     return this.buildUserRO(user);
   }
 
