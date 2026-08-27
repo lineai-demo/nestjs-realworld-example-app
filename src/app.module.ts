@@ -4,8 +4,8 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { ArticleModule } from './article/article.module';
 import { UserModule } from './user/user.module';
-import { TypeOrmModule } from '@nestjs/typeorm';
-import { Connection } from 'typeorm';
+import { TypeOrmModule, TypeOrmModuleOptions } from '@nestjs/typeorm';
+import { DataSource } from 'typeorm';
 import { ProfileModule } from './profile/profile.module';
 import { TagModule } from './tag/tag.module';
 
@@ -16,7 +16,7 @@ const ormconfig = fs.existsSync(ormconfigPath)
 
 @Module({
   imports: [
-    TypeOrmModule.forRoot(ormconfig),
+    TypeOrmModule.forRoot(ormconfig as TypeOrmModuleOptions),
     ArticleModule,
     UserModule,
     ProfileModule,
@@ -28,5 +28,5 @@ const ormconfig = fs.existsSync(ormconfigPath)
   providers: []
 })
 export class ApplicationModule {
-  constructor(private readonly connection: Connection) {}
+  constructor(private readonly dataSource: DataSource) {}
 }

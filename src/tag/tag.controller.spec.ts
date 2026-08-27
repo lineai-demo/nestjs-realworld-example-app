@@ -13,7 +13,7 @@ describe('TagController', () => {
       controllers: [TagController],
       providers: [
         TagService,
-        { provide: getRepositoryToken(TagEntity), useValue: {} },
+        { provide: getRepositoryToken(TagEntity), useValue: {} }
       ],
     }).compile();
 

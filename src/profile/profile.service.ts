@@ -1,6 +1,6 @@
 import { HttpException, HttpStatus, Injectable} from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { DeepPartial, Repository } from 'typeorm';
+import { FindOptionsWhere, Repository } from 'typeorm';
 import { UserEntity } from '../user/user.entity';
 import { ProfileRO, ProfileData } from './profile.interface';
 import {FollowsEntity} from "./follows.entity";
@@ -18,8 +18,8 @@ export class ProfileService {
     return await this.userRepository.find();
   }
 
-  async findOne(options?: DeepPartial<UserEntity>): Promise<ProfileRO> {
-    const user = await this.userRepository.findOne({where: options as any});
+  async findOne(options?: FindOptionsWhere<UserEntity>): Promise<ProfileRO> {
+    const user = await this.userRepository.findOne({where: options});
     delete user.id;
     if (user) delete user.password;
     return {profile: user};
