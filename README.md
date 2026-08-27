@@ -53,7 +53,7 @@ Copy TypeORM config example file for database settings
 Set mysql database settings in ormconfig.json
 
     {
-      "type": "mysql",
+      "type": "mysql2",
       "host": "localhost",
       "port": 3306,
       "username": "your-mysql-username",
