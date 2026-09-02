@@ -47,7 +47,7 @@
   },
   "devDependencies": {
     "@types/jest": "^29.5.14",
-    "@types/node": "^26.4.0",
+    "@types/node": "^26.4.1",
     "atob": ">=2.1.0",
     "deep-extend": ">=0.5.1",
     "extend": ">=3.0.2",
