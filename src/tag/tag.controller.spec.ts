@@ -1,7 +1,7 @@
 import { Test } from '@nestjs/testing';
 import { TagController } from './tag.controller';
 import { TagService } from './tag.service';
-import { getRepositoryToken } from "@nestjs/typeorm";
+import {getRepositoryToken} from "@nestjs/typeorm";
 import {TagEntity} from "./tag.entity";
 
 describe('TagController', () => {
