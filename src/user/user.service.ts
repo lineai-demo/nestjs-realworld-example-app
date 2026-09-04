@@ -94,7 +94,7 @@ export class UserService {
   }
 
   async findByEmail(email: string): Promise<UserRO>{
-    const user = await this.userRepository.findOne({where: {email: email}});
+    const user = await this.userRepository.findOne({where: {email}});
     return this.buildUserRO(user);
   }
 

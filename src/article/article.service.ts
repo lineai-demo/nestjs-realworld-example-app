@@ -114,7 +114,7 @@ export class ArticleService {
   async deleteComment(slug: string, id: string): Promise<ArticleRO> {
     let article = await this.articleRepository.findOne({where: {slug}});
 
-    const comment = await this.commentRepository.findOne({where: {id: Number(id)}});
+    const comment = await this.commentRepository.findOne({where: {id: +id}});
     const deleteIndex = article.comments.findIndex(_comment => _comment.id === comment.id);
 
     if (deleteIndex >= 0) {
@@ -188,7 +188,7 @@ export class ArticleService {
   }
 
   async update(slug: string, articleData: any): Promise<ArticleRO> {
-    let toUpdate = await this.articleRepository.findOne({ where: { slug: slug }});
+    let toUpdate = await this.articleRepository.findOne({ where: { slug } });
     let updated = Object.assign(toUpdate, articleData);
     const article = await this.articleRepository.save(updated);
     return {article};
