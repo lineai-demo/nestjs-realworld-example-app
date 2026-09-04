@@ -1,22 +1,16 @@
-import * as fs from 'fs';
-import * as path from 'path';
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { ArticleModule } from './article/article.module';
 import { UserModule } from './user/user.module';
-import { TypeOrmModule, TypeOrmModuleOptions } from '@nestjs/typeorm';
+import { TypeOrmModule } from '@nestjs/typeorm';
 import { DataSource } from 'typeorm';
 import { ProfileModule } from './profile/profile.module';
 import { TagModule } from './tag/tag.module';
-
-const ormconfigPath = path.resolve(process.cwd(), 'ormconfig.json');
-const ormconfig = fs.existsSync(ormconfigPath)
-  ? JSON.parse(fs.readFileSync(ormconfigPath, 'utf8'))
-  : {};
+import { getTypeOrmConfig } from './orm-config.util';
 
 @Module({
   imports: [
-    TypeOrmModule.forRoot(ormconfig as TypeOrmModuleOptions),
+    TypeOrmModule.forRoot(getTypeOrmConfig()),
     ArticleModule,
     UserModule,
     ProfileModule,
