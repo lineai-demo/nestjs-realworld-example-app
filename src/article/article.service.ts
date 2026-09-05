@@ -8,7 +8,6 @@ import { FollowsEntity } from '../profile/follows.entity';
 import { CreateArticleDto } from './dto';
 
 import {ArticleRO, ArticlesRO, CommentsRO} from './article.interface';
-const slug = require('slug');
 
 @Injectable()
 export class ArticleService {
@@ -172,7 +171,7 @@ export class ArticleService {
     let article = new ArticleEntity();
     article.title = articleData.title;
     article.description = articleData.description;
-    article.slug = this.slugify(articleData.title);
+    article.slug = await this.slugify(articleData.title);
     article.tagList = articleData.tagList || [];
     article.comments = [];
 
@@ -198,7 +197,8 @@ export class ArticleService {
     return await this.articleRepository.delete({ slug: slug});
   }
 
-  slugify(title: string) {
+  async slugify(title: string) {
+    const {default: slug} = await import('slug');
     return slug(title, {lower: true}) + '-' + (Math.random() * Math.pow(36, 6) | 0).toString(36)
   }
 }
