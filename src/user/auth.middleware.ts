@@ -2,8 +2,8 @@ import { HttpException, NestMiddleware, HttpStatus, Injectable } from '@nestjs/c
 import { ExtractJwt, Strategy } from 'passport-jwt';
 import { Request, Response, NextFunction } from 'express';
 import * as jwt from 'jsonwebtoken';
-import { SECRET } from '../config';
-import { UserService } from './user.service';
+import { SECRET } from '../config.js';
+import { UserService } from './user.service.js';
 
 @Injectable()
 export class AuthMiddleware implements NestMiddleware {

@@ -1,6 +1,6 @@
 import { Entity, PrimaryGeneratedColumn, Column, OneToOne, ManyToOne, OneToMany, JoinColumn, AfterUpdate, BeforeUpdate } from 'typeorm';
-import { UserEntity } from '../user/user.entity';
-import { Comment } from './comment.entity';
+import { UserEntity } from '../user/user.entity.js';
+import { Comment } from './comment.entity.js';
 
 @Entity('article')
 export class ArticleEntity {

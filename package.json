@@ -2,15 +2,16 @@
   "name": "nestjs-realworld-example-app",
   "version": "2.0.0",
   "description": "[![Build Status](https://travis-ci.org/anishkny/node-express-realworld-example-app.svg?branch=master)](https://travis-ci.org/anishkny/node-express-realworld-example-app)",
-  "main": "index.js",
+  "main": "dist/main.js",
+  "type": "module",
   "scripts": {
-    "start": "node index.js",
+    "start": "node --loader ts-node/esm src/main.ts",
     "start:watch": "nodemon",
     "prestart:prod": "tsc",
     "start:prod": "node dist/main.js",
-    "test": "jest --config=jest.json",
-    "test:watch": "jest --watch --config=jest.json",
-    "test:coverage": "jest --config=jest.json --coverage --coverageDirectory=coverage"
+    "test": "node --experimental-vm-modules node_modules/.bin/jest --config=jest.json",
+    "test:watch": "node --experimental-vm-modules node_modules/.bin/jest --watch --config=jest.json",
+    "test:coverage": "node --experimental-vm-modules node_modules/.bin/jest --config=jest.json --coverage --coverageDirectory=coverage"
   },
   "repository": {
     "type": "git",

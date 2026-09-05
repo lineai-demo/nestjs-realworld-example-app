@@ -1,8 +1,8 @@
 import { Get, Post, Delete, Param, Controller } from '@nestjs/common';
 import { Request } from 'express';
-import { ProfileService } from './profile.service';
-import { ProfileRO } from './profile.interface';
-import { User } from '../user/user.decorator';
+import { ProfileService } from './profile.service.js';
+import { ProfileRO } from './profile.interface.js';
+import { User } from '../user/user.decorator.js';
 
 import {
   ApiBearerAuth, ApiTags,

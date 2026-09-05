@@ -1,10 +1,10 @@
 import {Get, Post, Body, Put, Delete, Query, Param, Controller} from '@nestjs/common';
 import { Request } from 'express';
-import { ArticleService } from './article.service';
-import { CreateArticleDto, CreateCommentDto } from './dto';
-import { ArticlesRO, ArticleRO } from './article.interface';
-import { CommentsRO } from './article.interface';
-import { User } from '../user/user.decorator';
+import { ArticleService } from './article.service.js';
+import { CreateArticleDto, CreateCommentDto } from './dto/index.js';
+import { ArticlesRO, ArticleRO } from './article.interface.js';
+import { CommentsRO } from './article.interface.js';
+import { User } from '../user/user.decorator.js';
 
 import {
   ApiBearerAuth,

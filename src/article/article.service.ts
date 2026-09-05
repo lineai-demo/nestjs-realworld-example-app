@@ -1,14 +1,14 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository, DeleteResult } from 'typeorm';
-import { ArticleEntity } from './article.entity';
-import { Comment } from './comment.entity';
-import { UserEntity } from '../user/user.entity';
-import { FollowsEntity } from '../profile/follows.entity';
-import { CreateArticleDto } from './dto';
+import { ArticleEntity } from './article.entity.js';
+import { Comment } from './comment.entity.js';
+import { UserEntity } from '../user/user.entity.js';
+import { FollowsEntity } from '../profile/follows.entity.js';
+import { CreateArticleDto } from './dto/index.js';
 
-import {ArticleRO, ArticlesRO, CommentsRO} from './article.interface';
-const slug = require('slug');
+import {ArticleRO, ArticlesRO, CommentsRO} from './article.interface.js';
+import slug from 'slug';
 
 @Injectable()
 export class ArticleService {
