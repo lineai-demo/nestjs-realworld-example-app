@@ -1,16 +1,19 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "isolatedModules": true,
     "declaration": false,
     "noImplicitAny": false,
     "removeComments": true,
     "noLib": false,
-    "lib": ["es2017"],
+    "lib": ["es2021"],
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "target": "es6",
+    "target": "es2021",
     "sourceMap": true,
     "allowJs": true,
+    "esModuleInterop": true,
     "outDir": "./dist",
     "skipLibCheck": true
   },

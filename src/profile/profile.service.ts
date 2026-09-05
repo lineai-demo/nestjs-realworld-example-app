@@ -1,9 +1,9 @@
 import { HttpException, HttpStatus, Injectable} from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { FindOptionsWhere, Repository } from 'typeorm';
-import { UserEntity } from '../user/user.entity';
-import { ProfileRO, ProfileData } from './profile.interface';
-import {FollowsEntity} from "./follows.entity";
+import { UserEntity } from '../user/user.entity.js';
+import { ProfileRO, ProfileData } from './profile.interface.js';
+import {FollowsEntity} from "./follows.entity.js";
 
 @Injectable()
 export class ProfileService {

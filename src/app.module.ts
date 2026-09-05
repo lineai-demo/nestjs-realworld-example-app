@@ -1,13 +1,13 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { ArticleModule } from './article/article.module';
-import { UserModule } from './user/user.module';
+import { AppController } from './app.controller.js';
+import { ArticleModule } from './article/article.module.js';
+import { UserModule } from './user/user.module.js';
 import { TypeOrmModule, TypeOrmModuleOptions } from '@nestjs/typeorm';
 import { DataSource } from 'typeorm';
-import { ProfileModule } from './profile/profile.module';
-import { TagModule } from './tag/tag.module';
+import { ProfileModule } from './profile/profile.module.js';
+import { TagModule } from './tag/tag.module.js';
 
 const ormconfigPath = path.resolve(process.cwd(), 'ormconfig.json');
 const ormconfig = fs.existsSync(ormconfigPath)

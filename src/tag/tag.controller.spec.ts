@@ -1,8 +1,9 @@
+import { describe, beforeEach, it, expect, jest } from '@jest/globals';
 import { Test } from '@nestjs/testing';
-import { TagController } from './tag.controller';
-import { TagService } from './tag.service';
+import { TagController } from './tag.controller.js';
+import { TagService } from './tag.service.js';
 import {getRepositoryToken} from "@nestjs/typeorm";
-import {TagEntity} from "./tag.entity";
+import {TagEntity} from "./tag.entity.js";
 
 describe('TagController', () => {
   let tagController: TagController;

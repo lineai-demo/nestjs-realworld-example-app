@@ -1,5 +1,5 @@
-import { UserData } from '../user/user.interface';
-import { ArticleEntity } from './article.entity';
+import { UserData } from '../user/user.interface.js';
+import { ArticleEntity } from './article.entity.js';
 interface Comment {
   body: string;
 }
