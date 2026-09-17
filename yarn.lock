@@ -727,7 +727,7 @@ ansi-regex@^2.0.0, ansi-regex@^2.1.1:
 
 ansi-regex@^3.0.0:
   version "3.0.0"
-  resolved "https://npm.styque.de/ansi-regex/-/ansi-regex-3.0.0.tgz"
+  resolved "https://registry.npmjs.org/ansi-regex/-/ansi-regex-3.0.0.tgz"
   integrity sha1-7QMXwyIGT3lGbAKWa922Bas32Zg=
 
 ansi-regex@^4.1.0:
@@ -747,7 +747,7 @@ ansi-styles@^2.2.1:
 
 ansi-styles@^3.2.0:
   version "3.2.0"
-  resolved "https://npm.styque.de/ansi-styles/-/ansi-styles-3.2.0.tgz"
+  resolved "https://registry.npmjs.org/ansi-styles/-/ansi-styles-3.2.0.tgz"
   integrity sha512-NnSOmMEYtVR2JVMIGTzynRkkaxtiq1xnFBcdQD/DnNCYPoEPsVJhM98BDyaoNOQIi7p4okdi3E27eN7GQbsUug==
   dependencies:
     color-convert "^1.9.0"
@@ -782,7 +782,7 @@ any-promise@^1.0.0:
 
 anymatch@^2.0.0:
   version "2.0.0"
-  resolved "https://npm.styque.de/anymatch/-/anymatch-2.0.0.tgz"
+  resolved "https://registry.npmjs.org/anymatch/-/anymatch-2.0.0.tgz"
   integrity sha512-5teOsQWABXHHBFP9y3skS5P3d/WfWXpv3FUpy+LorMrNYaT9pI4oLMQX7jzQ2KklNpGpWHzdCXTDT2Y3XGlZBw==
   dependencies:
     micromatch "^3.1.4"
@@ -842,17 +842,17 @@ argparse@^1.0.7:
 
 arr-diff@^4.0.0:
   version "4.0.0"
-  resolved "https://npm.styque.de/arr-diff/-/arr-diff-4.0.0.tgz"
+  resolved "https://registry.npmjs.org/arr-diff/-/arr-diff-4.0.0.tgz"
   integrity sha1-1kYQdP6/7HHn4VI1dhoyml3HxSA=
 
 arr-flatten@^1.1.0:
   version "1.1.0"
-  resolved "https://npm.styque.de/arr-flatten/-/arr-flatten-1.1.0.tgz"
+  resolved "https://registry.npmjs.org/arr-flatten/-/arr-flatten-1.1.0.tgz"
   integrity sha512-L3hKV5R/p5o81R7O02IGnwpDmkp6E982XhtbuwSe3O4qOtMMMtodicASA1Cny2U+aCXcNpml+m4dPsvsJ3jatg==
 
 arr-union@^3.1.0:
   version "3.1.0"
-  resolved "https://npm.styque.de/arr-union/-/arr-union-3.1.0.tgz"
+  resolved "https://registry.npmjs.org/arr-union/-/arr-union-3.1.0.tgz"
   integrity sha1-45sJrqne+Gao8gbiiK9jkZuuOcQ=
 
 array-equal@^1.0.0:
@@ -867,7 +867,7 @@ array-flatten@1.1.1:
 
 array-unique@^0.3.2:
   version "0.3.2"
-  resolved "https://npm.styque.de/array-unique/-/array-unique-0.3.2.tgz"
+  resolved "https://registry.npmjs.org/array-unique/-/array-unique-0.3.2.tgz"
   integrity sha1-qJS3XUvE9s1nnvMkSp/Y9Gri1Cg=
 
 asn1@~0.2.3:
@@ -884,7 +884,7 @@ assert-plus@^1.0.0, assert-plus@1.0.0:
 
 assign-symbols@^1.0.0:
   version "1.0.0"
-  resolved "https://npm.styque.de/assign-symbols/-/assign-symbols-1.0.0.tgz"
+  resolved "https://registry.npmjs.org/assign-symbols/-/assign-symbols-1.0.0.tgz"
   integrity sha1-WWZ/QfrdTyDMvCu5a41Pf3jsA2c=
 
 astral-regex@^1.0.0:
@@ -899,7 +899,7 @@ async-each@^1.0.1:
 
 asynckit@^0.4.0:
   version "0.4.0"
-  resolved "https://npm.styque.de/asynckit/-/asynckit-0.4.0.tgz"
+  resolved "https://registry.npmjs.org/asynckit/-/asynckit-0.4.0.tgz"
   integrity sha1-x57Zf380y48robyXkLzDZkdLS3k=
 
 atob@^2.0.0, atob@2.1.2:
@@ -989,7 +989,7 @@ balanced-match@^1.0.0:
 
 base@^0.11.1:
   version "0.11.2"
-  resolved "https://npm.styque.de/base/-/base-0.11.2.tgz"
+  resolved "https://registry.npmjs.org/base/-/base-0.11.2.tgz"
   integrity sha512-5T6P4xPgpp0YDFvSWwEZ4NoE3aM4QBQXDzmVbraCkFj8zHM+mba8SyqB5DbZWyR7mYHo6Y7BdQo3MoA4m0TeQg==
   dependencies:
     cache-base "^1.0.1"
@@ -1068,7 +1068,7 @@ brace-expansion@^1.1.7:
 
 braces@^2.3.0:
   version "2.3.0"
-  resolved "https://npm.styque.de/braces/-/braces-2.3.0.tgz"
+  resolved "https://registry.npmjs.org/braces/-/braces-2.3.0.tgz"
   integrity sha512-P4O8UQRdGiMLWSizsApmXVQDBS6KCt7dSexgLKBmH5Hr1CZq7vsnscFh8oR1sP1ab1Zj0uCHCEzZeV6SfUf3rA==
   dependencies:
     arr-flatten "^1.1.0"
@@ -1150,7 +1150,7 @@ bser@2.1.1:
 
 buffer-equal-constant-time@^1.0.1, buffer-equal-constant-time@1.0.1:
   version "1.0.1"
-  resolved "https://npm.styque.de/buffer-equal-constant-time/-/buffer-equal-constant-time-1.0.1.tgz"
+  resolved "https://registry.npmjs.org/buffer-equal-constant-time/-/buffer-equal-constant-time-1.0.1.tgz"
   integrity sha1-+OcRMvf/5uAaXJaXpMbz5I1cyBk=
 
 buffer-from@^1.0.0, buffer-from@1.x:
@@ -1181,7 +1181,7 @@ bytes@3.1.0:
 
 cache-base@^1.0.1:
   version "1.0.1"
-  resolved "https://npm.styque.de/cache-base/-/cache-base-1.0.1.tgz"
+  resolved "https://registry.npmjs.org/cache-base/-/cache-base-1.0.1.tgz"
   integrity sha512-AKcdTnFSWATd5/GCPRxr2ChwIJ85CeyrEyjRHlKxQ56d4XJMGym0uAiKn0xbLOGOl3+yRpOTi484dVCEc5AUzQ==
   dependencies:
     collection-visit "^1.0.0"
@@ -1201,7 +1201,7 @@ callsites@^3.0.0:
 
 camelcase@^4.0.0:
   version "4.1.0"
-  resolved "https://npm.styque.de/camelcase/-/camelcase-4.1.0.tgz"
+  resolved "https://registry.npmjs.org/camelcase/-/camelcase-4.1.0.tgz"
   integrity sha1-1UVjW+HjPFQmScaRc+Xeas+uNN0=
 
 camelcase@^5.0.0:
@@ -1244,7 +1244,7 @@ chalk@^1.1.1:
 
 chalk@^2.0.0, chalk@^2.0.1:
   version "2.3.1"
-  resolved "https://npm.styque.de/chalk/-/chalk-2.3.1.tgz"
+  resolved "https://registry.npmjs.org/chalk/-/chalk-2.3.1.tgz"
   integrity sha512-QUU4ofkDoMIVO7hcx1iPTISs88wsO8jA92RQIm4JAwZvFGGAV2hSAA1NX7oVj2Ej2Q6NDTcRDjPTFrMCRZoJ6g==
   dependencies:
     ansi-styles "^3.2.0"
@@ -1318,7 +1318,7 @@ class-transformer@^0.2.3:
 
 class-utils@^0.3.5:
   version "0.3.6"
-  resolved "https://npm.styque.de/class-utils/-/class-utils-0.3.6.tgz"
+  resolved "https://registry.npmjs.org/class-utils/-/class-utils-0.3.6.tgz"
   integrity sha512-qOhPa/Fj7s6TY8H8esGu5QNpMMQxz79h+urzrNYN6mn+9BnxlDGf5QZ+XeCDsxSjPqsSR56XOZOJmpeurnLMeg==
   dependencies:
     arr-union "^3.1.0"
@@ -1399,7 +1399,7 @@ collect-v8-coverage@^1.0.0:
 
 collection-visit@^1.0.0:
   version "1.0.0"
-  resolved "https://npm.styque.de/collection-visit/-/collection-visit-1.0.0.tgz"
+  resolved "https://registry.npmjs.org/collection-visit/-/collection-visit-1.0.0.tgz"
   integrity sha1-S8A3PBZLwykbTTaMgpzxqApZ3KA=
   dependencies:
     map-visit "^1.0.0"
@@ -1407,7 +1407,7 @@ collection-visit@^1.0.0:
 
 color-convert@^1.9.0:
   version "1.9.1"
-  resolved "https://npm.styque.de/color-convert/-/color-convert-1.9.1.tgz"
+  resolved "https://registry.npmjs.org/color-convert/-/color-convert-1.9.1.tgz"
   integrity sha512-mjGanIiwQJskCC18rPR6OmrZ6fm2Lc7PeGFYwCmy5J34wC6F1PzdGL6xeMfmgicfYcNLGuVFA3WzXtIDCQSZxQ==
   dependencies:
     color-name "^1.1.1"
@@ -1421,7 +1421,7 @@ color-convert@^2.0.1:
 
 color-name@^1.1.1:
   version "1.1.3"
-  resolved "https://npm.styque.de/color-name/-/color-name-1.1.3.tgz"
+  resolved "https://registry.npmjs.org/color-name/-/color-name-1.1.3.tgz"
   integrity sha1-p9BVi9icQveV3UIyj3QIMcpTvCU=
 
 color-name@~1.1.4:
@@ -1438,7 +1438,7 @@ combined-stream@^1.0.6, combined-stream@~1.0.6:
 
 component-emitter@^1.2.0, component-emitter@^1.2.1:
   version "1.2.1"
-  resolved "https://npm.styque.de/component-emitter/-/component-emitter-1.2.1.tgz"
+  resolved "https://registry.npmjs.org/component-emitter/-/component-emitter-1.2.1.tgz"
   integrity sha1-E3kY1teCg/ffemt8WmPhQOaUJeY=
 
 concat-map@0.0.1:
@@ -1514,7 +1514,7 @@ cookiejar@^2.1.0:
 
 copy-descriptor@^0.1.0:
   version "0.1.1"
-  resolved "https://npm.styque.de/copy-descriptor/-/copy-descriptor-0.1.1.tgz"
+  resolved "https://registry.npmjs.org/copy-descriptor/-/copy-descriptor-0.1.1.tgz"
   integrity sha1-Z29us8OZl8LuGsOpJP1hJHSPV40=
 
 core-util-is@~1.0.0, core-util-is@1.0.2:
@@ -1539,7 +1539,7 @@ create-error-class@^3.0.0:
 
 cross-spawn@^5.0.1:
   version "5.1.0"
-  resolved "https://npm.styque.de/cross-spawn/-/cross-spawn-5.1.0.tgz"
+  resolved "https://registry.npmjs.org/cross-spawn/-/cross-spawn-5.1.0.tgz"
   integrity sha1-6L0O/uWPz/b4+UUQoKVUu/ojVEk=
   dependencies:
     lru-cache "^4.0.1"
@@ -1578,7 +1578,7 @@ crypto-random-string@^1.0.0:
 
 crypto@^1.0.1:
   version "1.0.1"
-  resolved "https://npm.styque.de/crypto/-/crypto-1.0.1.tgz"
+  resolved "https://registry.npmjs.org/crypto/-/crypto-1.0.1.tgz"
   integrity sha512-VxBKmeNcqQdiUQUW2Tzq0t377b54N2bMtXO/qiLa+6eRRmmC4qT3D4OnTGoT/U6O9aklQ/jTwbOtRMTTY8G0Ig==
 
 cssom@^0.4.1:
@@ -1631,14 +1631,14 @@ debug@^2.2.0:
 
 debug@^2.3.3:
   version "2.6.9"
-  resolved "https://npm.styque.de/debug/-/debug-2.6.9.tgz"
+  resolved "https://registry.npmjs.org/debug/-/debug-2.6.9.tgz"
   integrity sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==
   dependencies:
     ms "2.0.0"
 
 debug@^3.1.0, debug@=3.1.0:
   version "3.1.0"
-  resolved "https://npm.styque.de/debug/-/debug-3.1.0.tgz"
+  resolved "https://registry.npmjs.org/debug/-/debug-3.1.0.tgz"
   integrity sha512-OX8XqP7/1a9cqkxYw2yXss15f26NKWBpDXQd0/uK/KPqdQhxbPa994hnzjcE2VqQpDslf55723cKPUOGSmMY3g==
   dependencies:
     ms "2.0.0"
@@ -1678,7 +1678,7 @@ decamelize@^1.2.0:
 
 decode-uri-component@^0.2.0:
   version "0.2.0"
-  resolved "https://npm.styque.de/decode-uri-component/-/decode-uri-component-0.2.0.tgz"
+  resolved "https://registry.npmjs.org/decode-uri-component/-/decode-uri-component-0.2.0.tgz"
   integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
 
 deep-extend@^0.6.0, deep-extend@>=0.5.1:
@@ -1698,14 +1698,14 @@ deepmerge@^4.2.2:
 
 define-property@^0.2.5:
   version "0.2.5"
-  resolved "https://npm.styque.de/define-property/-/define-property-0.2.5.tgz"
+  resolved "https://registry.npmjs.org/define-property/-/define-property-0.2.5.tgz"
   integrity sha1-w1se+RjsPJkPmlvFe+BKrOxcgRY=
   dependencies:
     is-descriptor "^0.1.0"
 
 define-property@^1.0.0:
   version "1.0.0"
-  resolved "https://npm.styque.de/define-property/-/define-property-1.0.0.tgz"
+  resolved "https://registry.npmjs.org/define-property/-/define-property-1.0.0.tgz"
   integrity sha1-dp66rz9KY6rTr56NMEybvnm/sOY=
   dependencies:
     is-descriptor "^1.0.0"
@@ -1720,7 +1720,7 @@ define-property@^2.0.2:
 
 delayed-stream@~1.0.0:
   version "1.0.0"
-  resolved "https://npm.styque.de/delayed-stream/-/delayed-stream-1.0.0.tgz"
+  resolved "https://registry.npmjs.org/delayed-stream/-/delayed-stream-1.0.0.tgz"
   integrity sha1-3zrhmayt+31ECqrgsp4icrJOxhk=
 
 delegates@^1.0.0:
@@ -1850,7 +1850,7 @@ es5-ext@^0.10.35, es5-ext@^0.10.45, es5-ext@^0.10.46, es5-ext@^0.10.50, es5-ext@
 
 es6-iterator@^2.0.3, es6-iterator@~2.0.3:
   version "2.0.3"
-  resolved "https://npm.styque.de/es6-iterator/-/es6-iterator-2.0.3.tgz"
+  resolved "https://registry.npmjs.org/es6-iterator/-/es6-iterator-2.0.3.tgz"
   integrity sha1-p96IkUGgWpSwhUQDstCg+/qY87c=
   dependencies:
     d "1"
@@ -1882,7 +1882,7 @@ escape-html@~1.0.3:
 
 escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.5:
   version "1.0.5"
-  resolved "https://npm.styque.de/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz"
+  resolved "https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz"
   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
 
 escodegen@^1.11.1:
@@ -1919,7 +1919,7 @@ etag@~1.8.1:
 
 event-emitter@^0.3.5:
   version "0.3.5"
-  resolved "https://npm.styque.de/event-emitter/-/event-emitter-0.3.5.tgz"
+  resolved "https://registry.npmjs.org/event-emitter/-/event-emitter-0.3.5.tgz"
   integrity sha1-34xp7vFkeSPHFXuc6DhAYQsCzDk=
   dependencies:
     d "1"
@@ -1932,7 +1932,7 @@ exec-sh@^0.3.2:
 
 execa@^0.7.0:
   version "0.7.0"
-  resolved "https://npm.styque.de/execa/-/execa-0.7.0.tgz"
+  resolved "https://registry.npmjs.org/execa/-/execa-0.7.0.tgz"
   integrity sha1-lEvs00zEHuMqY6n68nrVpl/Fl3c=
   dependencies:
     cross-spawn "^5.0.1"
@@ -1979,7 +1979,7 @@ exit@^0.1.2:
 
 expand-brackets@^2.1.4:
   version "2.1.4"
-  resolved "https://npm.styque.de/expand-brackets/-/expand-brackets-2.1.4.tgz"
+  resolved "https://registry.npmjs.org/expand-brackets/-/expand-brackets-2.1.4.tgz"
   integrity sha1-t3c14xXOMPa27/D4OwQVGiJEliI=
   dependencies:
     debug "^2.3.3"
@@ -2054,7 +2054,7 @@ extend-shallow@^2.0.1:
 
 extend-shallow@^3.0.0:
   version "3.0.2"
-  resolved "https://npm.styque.de/extend-shallow/-/extend-shallow-3.0.2.tgz"
+  resolved "https://registry.npmjs.org/extend-shallow/-/extend-shallow-3.0.2.tgz"
   integrity sha1-Jqcarwc7OfshJxcnRhMcJwQCjbg=
   dependencies:
     assign-symbols "^1.0.0"
@@ -2075,7 +2075,7 @@ extend@^3.0.0, extend@>=3.0.2, extend@~3.0.2:
 
 extglob@^2.0.2, extglob@^2.0.4:
   version "2.0.4"
-  resolved "https://npm.styque.de/extglob/-/extglob-2.0.4.tgz"
+  resolved "https://registry.npmjs.org/extglob/-/extglob-2.0.4.tgz"
   integrity sha512-Nmb6QXkELsuBr24CJSkilo6UHHgbekK5UiZgfE6UHD3Eb27YC6oD+bhcT+tJ6cl8dmsgdQxnWlcry8ksBIBLpw==
   dependencies:
     array-unique "^0.3.2"
@@ -2131,7 +2131,7 @@ file-uri-to-path@1.0.0:
 
 fill-range@^4.0.0:
   version "4.0.0"
-  resolved "https://npm.styque.de/fill-range/-/fill-range-4.0.0.tgz"
+  resolved "https://registry.npmjs.org/fill-range/-/fill-range-4.0.0.tgz"
   integrity sha1-1USBHUKPmOsGpj3EAtJAPDKMOPc=
   dependencies:
     extend-shallow "^2.0.1"
@@ -2183,7 +2183,7 @@ follow-redirects@1.5.10:
 
 for-in@^1.0.2:
   version "1.0.2"
-  resolved "https://npm.styque.de/for-in/-/for-in-1.0.2.tgz"
+  resolved "https://registry.npmjs.org/for-in/-/for-in-1.0.2.tgz"
   integrity sha1-gQaNKVqBQuwKxybG4iAMMPttXoA=
 
 forever-agent@~0.6.1:
@@ -2212,7 +2212,7 @@ forwarded@~0.1.2:
 
 fragment-cache@^0.2.1:
   version "0.2.1"
-  resolved "https://npm.styque.de/fragment-cache/-/fragment-cache-0.2.1.tgz"
+  resolved "https://registry.npmjs.org/fragment-cache/-/fragment-cache-0.2.1.tgz"
   integrity sha1-QpD60n8T6Jvn8zeZxrxaCr//DRk=
   dependencies:
     map-cache "^0.2.2"
@@ -2274,7 +2274,7 @@ get-caller-file@^2.0.1:
 
 get-stream@^3.0.0:
   version "3.0.0"
-  resolved "https://npm.styque.de/get-stream/-/get-stream-3.0.0.tgz"
+  resolved "https://registry.npmjs.org/get-stream/-/get-stream-3.0.0.tgz"
   integrity sha1-jpQ9E1jcN1VQVOy+LtsFqhdO3hQ=
 
 get-stream@^4.0.0:
@@ -2293,7 +2293,7 @@ get-stream@^5.0.0:
 
 get-value@^2.0.3, get-value@^2.0.6:
   version "2.0.6"
-  resolved "https://npm.styque.de/get-value/-/get-value-2.0.6.tgz"
+  resolved "https://registry.npmjs.org/get-value/-/get-value-2.0.6.tgz"
   integrity sha1-3BXKHGcjh8p2vTesCjlbogQqLCg=
 
 getpass@^0.1.1:
@@ -2371,7 +2371,7 @@ got@^6.7.1:
 
 graceful-fs@^4.1.11, graceful-fs@^4.1.2:
   version "4.1.11"
-  resolved "https://npm.styque.de/graceful-fs/-/graceful-fs-4.1.11.tgz"
+  resolved "https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.1.11.tgz"
   integrity sha1-Dovf5NHduIVNZOBOp8AOKgJuVlg=
 
 graceful-fs@^4.2.4:
@@ -2406,7 +2406,7 @@ has-ansi@^2.0.0:
 
 has-flag@^3.0.0:
   version "3.0.0"
-  resolved "https://npm.styque.de/has-flag/-/has-flag-3.0.0.tgz"
+  resolved "https://registry.npmjs.org/has-flag/-/has-flag-3.0.0.tgz"
   integrity sha1-tdRU3CGZriJWmfNGfloH87lVuv0=
 
 has-flag@^4.0.0:
@@ -2421,7 +2421,7 @@ has-unicode@^2.0.0:
 
 has-value@^0.3.1:
   version "0.3.1"
-  resolved "https://npm.styque.de/has-value/-/has-value-0.3.1.tgz"
+  resolved "https://registry.npmjs.org/has-value/-/has-value-0.3.1.tgz"
   integrity sha1-ex9YutpiyoJ+wKIHgCVlSEWZXh8=
   dependencies:
     get-value "^2.0.3"
@@ -2430,7 +2430,7 @@ has-value@^0.3.1:
 
 has-value@^1.0.0:
   version "1.0.0"
-  resolved "https://npm.styque.de/has-value/-/has-value-1.0.0.tgz"
+  resolved "https://registry.npmjs.org/has-value/-/has-value-1.0.0.tgz"
   integrity sha1-GLKB2lhbHFxR3vJMkw7SmgvmsXc=
   dependencies:
     get-value "^2.0.6"
@@ -2439,12 +2439,12 @@ has-value@^1.0.0:
 
 has-values@^0.1.4:
   version "0.1.4"
-  resolved "https://npm.styque.de/has-values/-/has-values-0.1.4.tgz"
+  resolved "https://registry.npmjs.org/has-values/-/has-values-0.1.4.tgz"
   integrity sha1-bWHeldkd/Km5oCCJrThL/49it3E=
 
 has-values@^1.0.0:
   version "1.0.0"
-  resolved "https://npm.styque.de/has-values/-/has-values-1.0.0.tgz"
+  resolved "https://registry.npmjs.org/has-values/-/has-values-1.0.0.tgz"
   integrity sha1-lbC2P+whRmGab+V/51Yo1aOe/k8=
   dependencies:
     is-number "^3.0.0"
@@ -2536,7 +2536,7 @@ import-local@^3.0.2:
 
 imurmurhash@^0.1.4:
   version "0.1.4"
-  resolved "https://npm.styque.de/imurmurhash/-/imurmurhash-0.1.4.tgz"
+  resolved "https://registry.npmjs.org/imurmurhash/-/imurmurhash-0.1.4.tgz"
   integrity sha1-khi5srkoojixPcT7a21XbyMUU+o=
 
 inflight@^1.0.4:
@@ -2549,7 +2549,7 @@ inflight@^1.0.4:
 
 inherits@^2.0.1, inherits@^2.0.3, inherits@~2.0.1, inherits@~2.0.3, inherits@2, inherits@2.0.3:
   version "2.0.3"
-  resolved "https://npm.styque.de/inherits/-/inherits-2.0.3.tgz"
+  resolved "https://registry.npmjs.org/inherits/-/inherits-2.0.3.tgz"
   integrity sha1-Yzwsg+PaQqUC9SRmAiSA9CCCYd4=
 
 ini@^1.3.4, ini@~1.3.0:
@@ -2569,14 +2569,14 @@ ipaddr.js@1.9.1:
 
 is-accessor-descriptor@^0.1.6:
   version "0.1.6"
-  resolved "https://npm.styque.de/is-accessor-descriptor/-/is-accessor-descriptor-0.1.6.tgz"
+  resolved "https://registry.npmjs.org/is-accessor-descriptor/-/is-accessor-descriptor-0.1.6.tgz"
   integrity sha1-qeEss66Nh2cn7u84Q/igiXtcmNY=
   dependencies:
     kind-of "^3.0.2"
 
 is-accessor-descriptor@^1.0.0:
   version "1.0.0"
-  resolved "https://npm.styque.de/is-accessor-descriptor/-/is-accessor-descriptor-1.0.0.tgz"
+  resolved "https://registry.npmjs.org/is-accessor-descriptor/-/is-accessor-descriptor-1.0.0.tgz"
   integrity sha512-m5hnHTkcVsPfqx3AKlyttIPb7J+XykHvJP2B9bZDjlhLIoEq4XoK64Vg7boZlVWYK6LUY94dYPEE7Lh0ZkZKcQ==
   dependencies:
     kind-of "^6.0.0"
@@ -2595,7 +2595,7 @@ is-binary-path@^1.0.0:
 
 is-buffer@^1.1.5:
   version "1.1.6"
-  resolved "https://npm.styque.de/is-buffer/-/is-buffer-1.1.6.tgz"
+  resolved "https://registry.npmjs.org/is-buffer/-/is-buffer-1.1.6.tgz"
   integrity sha512-NcdALwpXkTm5Zvvbk7owOUSvVvBKDgKP5/ewfXEznmQFfs4ZRmanOeKBTjRVjka3QFoN6XJ+9F3USqfHqTaU5w==
 
 is-ci@^1.0.10:
@@ -2614,21 +2614,21 @@ is-ci@^2.0.0:
 
 is-data-descriptor@^0.1.4:
   version "0.1.4"
-  resolved "https://npm.styque.de/is-data-descriptor/-/is-data-descriptor-0.1.4.tgz"
+  resolved "https://registry.npmjs.org/is-data-descriptor/-/is-data-descriptor-0.1.4.tgz"
   integrity sha1-C17mSDiOLIYCgueT8YVv7D8wG1Y=
   dependencies:
     kind-of "^3.0.2"
 
 is-data-descriptor@^1.0.0:
   version "1.0.0"
-  resolved "https://npm.styque.de/is-data-descriptor/-/is-data-descriptor-1.0.0.tgz"
+  resolved "https://registry.npmjs.org/is-data-descriptor/-/is-data-descriptor-1.0.0.tgz"
   integrity sha512-jbRXy1FmtAoCjQkVmIVYwuuqDFUbaOeDjmed1tOGPrsMhtJA4rD9tkgA0F1qJ3gRFRXcHYVkdeaP50Q5rE/jLQ==
   dependencies:
     kind-of "^6.0.0"
 
 is-descriptor@^0.1.0:
   version "0.1.6"
-  resolved "https://npm.styque.de/is-descriptor/-/is-descriptor-0.1.6.tgz"
+  resolved "https://registry.npmjs.org/is-descriptor/-/is-descriptor-0.1.6.tgz"
   integrity sha512-avDYr0SB3DwO9zsMov0gKCESFYqCnE4hq/4z3TdUlukEy5t9C0YRq7HLrsN52NAcqXKaepeCD0n+B0arnVG3Hg==
   dependencies:
     is-accessor-descriptor "^0.1.6"
@@ -2637,7 +2637,7 @@ is-descriptor@^0.1.0:
 
 is-descriptor@^1.0.0, is-descriptor@^1.0.2:
   version "1.0.2"
-  resolved "https://npm.styque.de/is-descriptor/-/is-descriptor-1.0.2.tgz"
+  resolved "https://registry.npmjs.org/is-descriptor/-/is-descriptor-1.0.2.tgz"
   integrity sha512-2eis5WqQGV7peooDyLmNEPUrps9+SXX5c9pL3xEB+4e9HnGuDa7mB7kHxHw4CbqS9k1T2hOH3miL8n8WtiYVtg==
   dependencies:
     is-accessor-descriptor "^1.0.0"
@@ -2646,7 +2646,7 @@ is-descriptor@^1.0.0, is-descriptor@^1.0.2:
 
 is-extendable@^0.1.0, is-extendable@^0.1.1:
   version "0.1.1"
-  resolved "https://npm.styque.de/is-extendable/-/is-extendable-0.1.1.tgz"
+  resolved "https://registry.npmjs.org/is-extendable/-/is-extendable-0.1.1.tgz"
   integrity sha1-YrEQ4omkcUGOPsNqYX1HLjAd/Ik=
 
 is-extendable@^1.0.1:
@@ -2670,7 +2670,7 @@ is-fullwidth-code-point@^1.0.0:
 
 is-fullwidth-code-point@^2.0.0:
   version "2.0.0"
-  resolved "https://npm.styque.de/is-fullwidth-code-point/-/is-fullwidth-code-point-2.0.0.tgz"
+  resolved "https://registry.npmjs.org/is-fullwidth-code-point/-/is-fullwidth-code-point-2.0.0.tgz"
   integrity sha1-o7MKXE8ZkYMWeqq5O+764937ZU8=
 
 is-fullwidth-code-point@^3.0.0:
@@ -2712,7 +2712,7 @@ is-npm@^1.0.0:
 
 is-number@^3.0.0:
   version "3.0.0"
-  resolved "https://npm.styque.de/is-number/-/is-number-3.0.0.tgz"
+  resolved "https://registry.npmjs.org/is-number/-/is-number-3.0.0.tgz"
   integrity sha1-JP1iAaR4LPUFYcgQJ2r8fRLXEZU=
   dependencies:
     kind-of "^3.0.2"
@@ -2729,7 +2729,7 @@ is-obj@^1.0.0:
 
 is-odd@^1.0.0:
   version "1.0.0"
-  resolved "https://npm.styque.de/is-odd/-/is-odd-1.0.0.tgz"
+  resolved "https://registry.npmjs.org/is-odd/-/is-odd-1.0.0.tgz"
   integrity sha1-O4qTLrAos3dcObsJ6RdnrM22kIg=
   dependencies:
     is-number "^3.0.0"
@@ -2743,7 +2743,7 @@ is-path-inside@^1.0.0:
 
 is-plain-object@^2.0.1, is-plain-object@^2.0.3, is-plain-object@^2.0.4:
   version "2.0.4"
-  resolved "https://npm.styque.de/is-plain-object/-/is-plain-object-2.0.4.tgz"
+  resolved "https://registry.npmjs.org/is-plain-object/-/is-plain-object-2.0.4.tgz"
   integrity sha512-h5PpgXkWitc38BBMYawTYMWJHFZJVnBquFE57xFpjB8pJFiF6gZ+bU+WyI/yqXiFR5mdLsgYNaPe8uao6Uv9Og==
   dependencies:
     isobject "^3.0.1"
@@ -2765,7 +2765,7 @@ is-retry-allowed@^1.0.0:
 
 is-stream@^1.0.0, is-stream@^1.1.0:
   version "1.1.0"
-  resolved "https://npm.styque.de/is-stream/-/is-stream-1.1.0.tgz"
+  resolved "https://registry.npmjs.org/is-stream/-/is-stream-1.1.0.tgz"
   integrity sha1-EtSj3U5o4Lec6428hBc66A2RykQ=
 
 is-stream@^2.0.0:
@@ -2800,24 +2800,24 @@ isarray@0.0.1:
 
 isarray@1.0.0:
   version "1.0.0"
-  resolved "https://npm.styque.de/isarray/-/isarray-1.0.0.tgz"
+  resolved "https://registry.npmjs.org/isarray/-/isarray-1.0.0.tgz"
   integrity sha1-u5NdSFgsuhaMBoNJV6VKPgcSTxE=
 
 isexe@^2.0.0:
   version "2.0.0"
-  resolved "https://npm.styque.de/isexe/-/isexe-2.0.0.tgz"
+  resolved "https://registry.npmjs.org/isexe/-/isexe-2.0.0.tgz"
   integrity sha1-6PvzdNxVb/iUehDcsFctYz8s+hA=
 
 isobject@^2.0.0:
   version "2.1.0"
-  resolved "https://npm.styque.de/isobject/-/isobject-2.1.0.tgz"
+  resolved "https://registry.npmjs.org/isobject/-/isobject-2.1.0.tgz"
   integrity sha1-8GVWEJaj8dou9GJy+BXIQNh+DIk=
   dependencies:
     isarray "1.0.0"
 
 isobject@^3.0.0, isobject@^3.0.1:
   version "3.0.1"
-  resolved "https://npm.styque.de/isobject/-/isobject-3.0.1.tgz"
+  resolved "https://registry.npmjs.org/isobject/-/isobject-3.0.1.tgz"
   integrity sha1-TkMekrEalzFjaqH5yNHMvP2reN8=
 
 isstream@~0.1.2:
@@ -3403,38 +3403,38 @@ jws@^4.0.1:
 
 kind-of@^3.0.2, kind-of@^3.0.3:
   version "3.2.2"
-  resolved "https://npm.styque.de/kind-of/-/kind-of-3.2.2.tgz"
+  resolved "https://registry.npmjs.org/kind-of/-/kind-of-3.2.2.tgz"
   integrity sha1-MeohpzS6ubuw8yRm2JOupR5KPGQ=
   dependencies:
     is-buffer "^1.1.5"
 
 kind-of@^3.2.0:
   version "3.2.2"
-  resolved "https://npm.styque.de/kind-of/-/kind-of-3.2.2.tgz"
+  resolved "https://registry.npmjs.org/kind-of/-/kind-of-3.2.2.tgz"
   integrity sha1-MeohpzS6ubuw8yRm2JOupR5KPGQ=
   dependencies:
     is-buffer "^1.1.5"
 
 kind-of@^4.0.0:
   version "4.0.0"
-  resolved "https://npm.styque.de/kind-of/-/kind-of-4.0.0.tgz"
+  resolved "https://registry.npmjs.org/kind-of/-/kind-of-4.0.0.tgz"
   integrity sha1-IIE989cSkosgc3hpGkUGb65y3Vc=
   dependencies:
     is-buffer "^1.1.5"
 
 kind-of@^5.0.0:
   version "5.1.0"
-  resolved "https://npm.styque.de/kind-of/-/kind-of-5.1.0.tgz"
+  resolved "https://registry.npmjs.org/kind-of/-/kind-of-5.1.0.tgz"
   integrity sha512-NGEErnH6F2vUuXDh+OlbcKW7/wOcfdRHaZ7VWtqCztfHri/++YKmP51OdWeGPuqCOba6kk2OTe5d02VmTB80Pw==
 
 kind-of@^5.0.2:
   version "5.1.0"
-  resolved "https://npm.styque.de/kind-of/-/kind-of-5.1.0.tgz"
+  resolved "https://registry.npmjs.org/kind-of/-/kind-of-5.1.0.tgz"
   integrity sha512-NGEErnH6F2vUuXDh+OlbcKW7/wOcfdRHaZ7VWtqCztfHri/++YKmP51OdWeGPuqCOba6kk2OTe5d02VmTB80Pw==
 
 kind-of@^6.0.0, kind-of@^6.0.2:
   version "6.0.2"
-  resolved "https://npm.styque.de/kind-of/-/kind-of-6.0.2.tgz"
+  resolved "https://registry.npmjs.org/kind-of/-/kind-of-6.0.2.tgz"
   integrity sha512-s5kLOcnH0XqDO+FvuaLX8DDjZ18CGFk7VygH40QoKPUQhW4e2rvM0rwUq0t8IQDOwYSeLK01U90OjzBTme2QqA==
 
 kleur@^3.0.3:
@@ -3451,7 +3451,7 @@ latest-version@^3.0.0:
 
 lazy-cache@^2.0.2:
   version "2.0.2"
-  resolved "https://npm.styque.de/lazy-cache/-/lazy-cache-2.0.2.tgz"
+  resolved "https://registry.npmjs.org/lazy-cache/-/lazy-cache-2.0.2.tgz"
   integrity sha1-uRkKT5EzVGlIQIWfio9whNiCImQ=
   dependencies:
     set-getter "^0.1.0"
@@ -3491,32 +3491,32 @@ locate-path@^5.0.0:
 
 lodash.includes@^4.3.0:
   version "4.3.0"
-  resolved "https://npm.styque.de/lodash.includes/-/lodash.includes-4.3.0.tgz"
+  resolved "https://registry.npmjs.org/lodash.includes/-/lodash.includes-4.3.0.tgz"
   integrity sha1-YLuYqHy5I8aMoeUTJUgzFISfVT8=
 
 lodash.isboolean@^3.0.3:
   version "3.0.3"
-  resolved "https://npm.styque.de/lodash.isboolean/-/lodash.isboolean-3.0.3.tgz"
+  resolved "https://registry.npmjs.org/lodash.isboolean/-/lodash.isboolean-3.0.3.tgz"
   integrity sha1-bC4XHbKiV82WgC/UOwGyDV9YcPY=
 
 lodash.isinteger@^4.0.4:
   version "4.0.4"
-  resolved "https://npm.styque.de/lodash.isinteger/-/lodash.isinteger-4.0.4.tgz"
+  resolved "https://registry.npmjs.org/lodash.isinteger/-/lodash.isinteger-4.0.4.tgz"
   integrity sha1-YZwK89A/iwTDH1iChAt3sRzWg0M=
 
 lodash.isnumber@^3.0.3:
   version "3.0.3"
-  resolved "https://npm.styque.de/lodash.isnumber/-/lodash.isnumber-3.0.3.tgz"
+  resolved "https://registry.npmjs.org/lodash.isnumber/-/lodash.isnumber-3.0.3.tgz"
   integrity sha1-POdoEMWSjQM1IwGsKHMX8RwLH/w=
 
 lodash.isplainobject@^4.0.6:
   version "4.0.6"
-  resolved "https://npm.styque.de/lodash.isplainobject/-/lodash.isplainobject-4.0.6.tgz"
+  resolved "https://registry.npmjs.org/lodash.isplainobject/-/lodash.isplainobject-4.0.6.tgz"
   integrity sha1-fFJqUtibRcRcxpC4gWO+BJf1UMs=
 
 lodash.isstring@^4.0.1:
   version "4.0.1"
-  resolved "https://npm.styque.de/lodash.isstring/-/lodash.isstring-4.0.1.tgz"
+  resolved "https://registry.npmjs.org/lodash.isstring/-/lodash.isstring-4.0.1.tgz"
   integrity sha1-1SfftUVuynzJu5XV2ur4i6VKVFE=
 
 lodash.memoize@4.x:
@@ -3526,7 +3526,7 @@ lodash.memoize@4.x:
 
 lodash.once@^4.0.0:
   version "4.1.1"
-  resolved "https://npm.styque.de/lodash.once/-/lodash.once-4.1.1.tgz"
+  resolved "https://registry.npmjs.org/lodash.once/-/lodash.once-4.1.1.tgz"
   integrity sha1-DdOXEhPHxW34gJd9UEyI+0cal6w=
 
 lodash.sortby@^4.7.0:
@@ -3561,7 +3561,7 @@ lru-cache@^4.0.1:
 
 lru-queue@0.1:
   version "0.1.0"
-  resolved "https://npm.styque.de/lru-queue/-/lru-queue-0.1.0.tgz"
+  resolved "https://registry.npmjs.org/lru-queue/-/lru-queue-0.1.0.tgz"
   integrity sha1-Jzi9nw089PhEkMVzbEhpmsYyzaM=
   dependencies:
     es5-ext "~0.10.2"
@@ -3594,12 +3594,12 @@ makeerror@1.0.x:
 
 map-cache@^0.2.2:
   version "0.2.2"
-  resolved "https://npm.styque.de/map-cache/-/map-cache-0.2.2.tgz"
+  resolved "https://registry.npmjs.org/map-cache/-/map-cache-0.2.2.tgz"
   integrity sha1-wyq9C9ZSXZsFFkW7TyasXcmKDb8=
 
 map-visit@^1.0.0:
   version "1.0.0"
-  resolved "https://npm.styque.de/map-visit/-/map-visit-1.0.0.tgz"
+  resolved "https://registry.npmjs.org/map-visit/-/map-visit-1.0.0.tgz"
   integrity sha1-7Nyo8TFE5mDxtb1B8S80edmN+48=
   dependencies:
     object-visit "^1.0.0"
@@ -3635,7 +3635,7 @@ merge-stream@^2.0.0:
 
 methods@^1.1.1, methods@^1.1.2, methods@~1.1.2:
   version "1.1.2"
-  resolved "https://npm.styque.de/methods/-/methods-1.1.2.tgz"
+  resolved "https://registry.npmjs.org/methods/-/methods-1.1.2.tgz"
   integrity sha1-VSmk1nZUE07cxSZmVoNbD4Ua/O4=
 
 micromatch@^3.1.10:
@@ -3659,7 +3659,7 @@ micromatch@^3.1.10:
 
 micromatch@^3.1.4:
   version "3.1.5"
-  resolved "https://npm.styque.de/micromatch/-/micromatch-3.1.5.tgz"
+  resolved "https://registry.npmjs.org/micromatch/-/micromatch-3.1.5.tgz"
   integrity sha512-ykttrLPQrz1PUJcXjwsTUjGoPJ64StIGNE2lGVD1c9CuguJ+L7/navsE8IcDNndOoCMvYV0qc/exfVbMHkUhvA==
   dependencies:
     arr-diff "^4.0.0"
@@ -3758,7 +3758,7 @@ minizlib@^1.2.1:
 
 mixin-deep@^1.2.0:
   version "1.3.1"
-  resolved "https://npm.styque.de/mixin-deep/-/mixin-deep-1.3.1.tgz"
+  resolved "https://registry.npmjs.org/mixin-deep/-/mixin-deep-1.3.1.tgz"
   integrity sha512-8ZItLHeEgaqEvd5lYBXfm4EZSFCX29Jb9K+lAHhDKzReKBQKj3R+7NOF6tjqYi9t4oI8VUfaWITJQm86wnXGNQ==
   dependencies:
     for-in "^1.0.2"
@@ -3831,7 +3831,7 @@ nan@^2.12.1:
 
 nanomatch@^1.2.5:
   version "1.2.7"
-  resolved "https://npm.styque.de/nanomatch/-/nanomatch-1.2.7.tgz"
+  resolved "https://registry.npmjs.org/nanomatch/-/nanomatch-1.2.7.tgz"
   integrity sha512-/5ldsnyurvEw7wNpxLFgjVvBLMta43niEYOy0CJ4ntcYSbx6bugRUTQeFb4BR/WanEL1o3aQgHuVLHQaB6tOqg==
   dependencies:
     arr-diff "^4.0.0"
@@ -3996,7 +3996,7 @@ normalize-package-data@^2.5.0:
 
 normalize-path@^2.1.1:
   version "2.1.1"
-  resolved "https://npm.styque.de/normalize-path/-/normalize-path-2.1.1.tgz"
+  resolved "https://registry.npmjs.org/normalize-path/-/normalize-path-2.1.1.tgz"
   integrity sha1-GrKLVW4Zg2Oowab35vogE3/mrtk=
   dependencies:
     remove-trailing-separator "^1.0.1"
@@ -4029,7 +4029,7 @@ npm-packlist@^1.1.6:
 
 npm-run-path@^2.0.0:
   version "2.0.2"
-  resolved "https://npm.styque.de/npm-run-path/-/npm-run-path-2.0.2.tgz"
+  resolved "https://registry.npmjs.org/npm-run-path/-/npm-run-path-2.0.2.tgz"
   integrity sha1-NakjLfo11wZ7TLLd8jV7GHFTbF8=
   dependencies:
     path-key "^2.0.0"
@@ -4073,7 +4073,7 @@ object-assign@^4, object-assign@^4.0.1, object-assign@^4.1.0, object-assign@^4.1
 
 object-copy@^0.1.0:
   version "0.1.0"
-  resolved "https://npm.styque.de/object-copy/-/object-copy-0.1.0.tgz"
+  resolved "https://registry.npmjs.org/object-copy/-/object-copy-0.1.0.tgz"
   integrity sha1-fn2Fi3gb18mRpBupde04EnVOmYw=
   dependencies:
     copy-descriptor "^0.1.0"
@@ -4087,14 +4087,14 @@ object-hash@2.0.3:
 
 object-visit@^1.0.0:
   version "1.0.1"
-  resolved "https://npm.styque.de/object-visit/-/object-visit-1.0.1.tgz"
+  resolved "https://registry.npmjs.org/object-visit/-/object-visit-1.0.1.tgz"
   integrity sha1-95xEk68MU3e1n+OdOV5BBC3QRbs=
   dependencies:
     isobject "^3.0.0"
 
 object.pick@^1.3.0:
   version "1.3.0"
-  resolved "https://npm.styque.de/object.pick/-/object.pick-1.3.0.tgz"
+  resolved "https://registry.npmjs.org/object.pick/-/object.pick-1.3.0.tgz"
   integrity sha1-h6EKxMFpS9Lhy/U1kaZhQftd10c=
   dependencies:
     isobject "^3.0.1"
@@ -4122,7 +4122,7 @@ onetime@^5.1.0:
 
 optional@0.1.4:
   version "0.1.4"
-  resolved "https://npm.styque.de/optional/-/optional-0.1.4.tgz"
+  resolved "https://registry.npmjs.org/optional/-/optional-0.1.4.tgz"
   integrity sha512-gtvrrCfkE08wKcgXaVwQVgwEQ8vel2dc5DDBn9RLQZ3YtmtkBss6A2HY6BnJH4N/4Ku97Ri/SF8sNWE2225WJw==
 
 optionator@^0.8.1:
@@ -4162,7 +4162,7 @@ p-each-series@^2.1.0:
 
 p-finally@^1.0.0:
   version "1.0.0"
-  resolved "https://npm.styque.de/p-finally/-/p-finally-1.0.0.tgz"
+  resolved "https://registry.npmjs.org/p-finally/-/p-finally-1.0.0.tgz"
   integrity sha1-P7z7FbiZpEEjs0ttzBi3JDNqLK4=
 
 p-finally@^2.0.0:
@@ -4245,7 +4245,7 @@ parseurl@~1.3.3:
 
 pascalcase@^0.1.1:
   version "0.1.1"
-  resolved "https://npm.styque.de/pascalcase/-/pascalcase-0.1.1.tgz"
+  resolved "https://registry.npmjs.org/pascalcase/-/pascalcase-0.1.1.tgz"
   integrity sha1-s2PlXoAGym/iF4TS2yK9FdeRfxQ=
 
 passport-jwt@4.0.1:
@@ -4258,7 +4258,7 @@ passport-jwt@4.0.1:
 
 passport-strategy@^1.0.0:
   version "1.0.0"
-  resolved "https://npm.styque.de/passport-strategy/-/passport-strategy-1.0.0.tgz"
+  resolved "https://registry.npmjs.org/passport-strategy/-/passport-strategy-1.0.0.tgz"
   integrity sha1-tVOaqPwiWj0a0XlHbd8ja0QPUuQ=
 
 path-dirname@^1.0.0:
@@ -4288,7 +4288,7 @@ path-is-inside@^1.0.1:
 
 path-key@^2.0.0, path-key@^2.0.1:
   version "2.0.1"
-  resolved "https://npm.styque.de/path-key/-/path-key-2.0.1.tgz"
+  resolved "https://registry.npmjs.org/path-key/-/path-key-2.0.1.tgz"
   integrity sha1-QRyttXTFoUDTpLGRDUDYDMn0C0A=
 
 path-key@^3.0.0, path-key@^3.1.0:
@@ -4323,7 +4323,7 @@ picomatch@^2.0.4, picomatch@^2.0.5:
 
 pify@^3.0.0:
   version "3.0.0"
-  resolved "https://npm.styque.de/pify/-/pify-3.0.0.tgz"
+  resolved "https://registry.npmjs.org/pify/-/pify-3.0.0.tgz"
   integrity sha1-5aSs0sEB/fPZpNB/DbxNtJ3SgXY=
 
 pirates@^4.0.1:
@@ -4347,7 +4347,7 @@ pn@^1.1.0:
 
 posix-character-classes@^0.1.0:
   version "0.1.1"
-  resolved "https://npm.styque.de/posix-character-classes/-/posix-character-classes-0.1.1.tgz"
+  resolved "https://registry.npmjs.org/posix-character-classes/-/posix-character-classes-0.1.1.tgz"
   integrity sha1-AerA/jta9xoqbAL+q7jB/vfgDqs=
 
 prelude-ls@~1.1.2:
@@ -4372,7 +4372,7 @@ pretty-format@^25.2.1, pretty-format@^25.5.0:
 
 process-nextick-args@~2.0.0:
   version "2.0.0"
-  resolved "https://npm.styque.de/process-nextick-args/-/process-nextick-args-2.0.0.tgz"
+  resolved "https://registry.npmjs.org/process-nextick-args/-/process-nextick-args-2.0.0.tgz"
   integrity sha512-MtEC1TqN0EU5nephaJ4rAtThHtC86dNN9qCuEhtshvpVBkAW5ZO7BASN9REnF9eoXGcRub+pFuKEpOHE+HbEMw==
 
 prompts@^2.0.1:
@@ -4393,7 +4393,7 @@ proxy-addr@~2.0.5:
 
 pseudomap@^1.0.2:
   version "1.0.2"
-  resolved "https://npm.styque.de/pseudomap/-/pseudomap-1.0.2.tgz"
+  resolved "https://registry.npmjs.org/pseudomap/-/pseudomap-1.0.2.tgz"
   integrity sha1-8FKijacOYYkX7wqKw0wa5aaChrM=
 
 psl@^1.1.28:
@@ -4535,7 +4535,7 @@ reflect-metadata@^0.1.12, reflect-metadata@^0.1.13:
 
 regex-not@^1.0.0:
   version "1.0.0"
-  resolved "https://npm.styque.de/regex-not/-/regex-not-1.0.0.tgz"
+  resolved "https://registry.npmjs.org/regex-not/-/regex-not-1.0.0.tgz"
   integrity sha1-Qvg+OXcWIt+CawKvF2Ul1qXxV/k=
   dependencies:
     extend-shallow "^2.0.1"
@@ -4565,17 +4565,17 @@ registry-url@^3.0.3:
 
 remove-trailing-separator@^1.0.1:
   version "1.1.0"
-  resolved "https://npm.styque.de/remove-trailing-separator/-/remove-trailing-separator-1.1.0.tgz"
+  resolved "https://registry.npmjs.org/remove-trailing-separator/-/remove-trailing-separator-1.1.0.tgz"
   integrity sha1-wkvOKig62tW8P1jg1IJJuSN52O8=
 
 repeat-element@^1.1.2:
   version "1.1.2"
-  resolved "https://npm.styque.de/repeat-element/-/repeat-element-1.1.2.tgz"
+  resolved "https://registry.npmjs.org/repeat-element/-/repeat-element-1.1.2.tgz"
   integrity sha1-7wiaF40Ug7quTZPrmLT55OEdmQo=
 
 repeat-string@^1.6.1:
   version "1.6.1"
-  resolved "https://npm.styque.de/repeat-string/-/repeat-string-1.6.1.tgz"
+  resolved "https://registry.npmjs.org/repeat-string/-/repeat-string-1.6.1.tgz"
   integrity sha1-jcrkcOHIirwtYA//Sndihtp15jc=
 
 request-promise-core@1.1.3:
@@ -4644,7 +4644,7 @@ resolve-from@^5.0.0:
 
 resolve-url@^0.2.1:
   version "0.2.1"
-  resolved "https://npm.styque.de/resolve-url/-/resolve-url-0.2.1.tgz"
+  resolved "https://registry.npmjs.org/resolve-url/-/resolve-url-0.2.1.tgz"
   integrity sha1-LGN/53yJOv0qZj/iGqkIAGjiBSo=
 
 resolve@^1.10.0, resolve@^1.17.0, resolve@^1.3.2, resolve@1.x:
@@ -4692,7 +4692,7 @@ rxjs@^6.0.0, rxjs@^6.5.5:
 
 safe-buffer@^5.0.1, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "5.1.1"
-  resolved "https://npm.styque.de/safe-buffer/-/safe-buffer-5.1.1.tgz"
+  resolved "https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.1.tgz"
   integrity sha512-kKvNJn6Mm93gAczWVJg7wH+wGYWNrDHdWvpUmHyEsgCtIwwo3bqPtV4tR5tuPaUhTOo/kvhVwd8XwwOllGYkbg==
 
 safe-buffer@^5.1.2:
@@ -4753,7 +4753,7 @@ semver-diff@^2.0.0:
 
 semver@^5.0.3, semver@^5.1.0, semver@^5.3.0, semver@^5.4.1, semver@^5.5.0, "semver@2 || 3 || 4 || 5":
   version "5.5.0"
-  resolved "https://npm.styque.de/semver/-/semver-5.5.0.tgz"
+  resolved "https://registry.npmjs.org/semver/-/semver-5.5.0.tgz"
   integrity sha512-4SJ3dm0WAwWy/NVeioZh5AntkdJoWKxHxcmyP622fOkgHa4z3R0TdBJICINyaSDE6uNwVc8gZr+ZinwZAH4xIA==
 
 semver@^5.6.0:
@@ -4817,14 +4817,14 @@ set-blocking@^2.0.0, set-blocking@~2.0.0:
 
 set-getter@^0.1.0:
   version "0.1.0"
-  resolved "https://npm.styque.de/set-getter/-/set-getter-0.1.0.tgz"
+  resolved "https://registry.npmjs.org/set-getter/-/set-getter-0.1.0.tgz"
   integrity sha1-12nBgsnVpR9AkUXy+6guXoboA3Y=
   dependencies:
     to-object-path "^0.3.0"
 
 set-value@^0.4.3:
   version "0.4.3"
-  resolved "https://npm.styque.de/set-value/-/set-value-0.4.3.tgz"
+  resolved "https://registry.npmjs.org/set-value/-/set-value-0.4.3.tgz"
   integrity sha1-fbCPnT0i3H945Trzw79GZuzfzPE=
   dependencies:
     extend-shallow "^2.0.1"
@@ -4834,7 +4834,7 @@ set-value@^0.4.3:
 
 set-value@^2.0.0:
   version "2.0.0"
-  resolved "https://npm.styque.de/set-value/-/set-value-2.0.0.tgz"
+  resolved "https://registry.npmjs.org/set-value/-/set-value-2.0.0.tgz"
   integrity sha512-hw0yxk9GT/Hr5yJEYnHNKYXkIA8mVJgd9ditYZCe16ZczcaELYYcfvaXesNACk2O8O0nTiPQcQhGUQj8JLzeeg==
   dependencies:
     extend-shallow "^2.0.1"
@@ -4857,7 +4857,7 @@ sha.js@^2.4.11:
 
 shebang-command@^1.2.0:
   version "1.2.0"
-  resolved "https://npm.styque.de/shebang-command/-/shebang-command-1.2.0.tgz"
+  resolved "https://registry.npmjs.org/shebang-command/-/shebang-command-1.2.0.tgz"
   integrity sha1-RKrGW2lbAzmJaMOfNj/uXer98eo=
   dependencies:
     shebang-regex "^1.0.0"
@@ -4871,7 +4871,7 @@ shebang-command@^2.0.0:
 
 shebang-regex@^1.0.0:
   version "1.0.0"
-  resolved "https://npm.styque.de/shebang-regex/-/shebang-regex-1.0.0.tgz"
+  resolved "https://registry.npmjs.org/shebang-regex/-/shebang-regex-1.0.0.tgz"
   integrity sha1-2kL0l0DAtC2yypcoVxyxkMmO/qM=
 
 shebang-regex@^3.0.0:
@@ -4908,7 +4908,7 @@ slug@^1.1.0:
 
 snapdragon-node@^2.0.1:
   version "2.1.1"
-  resolved "https://npm.styque.de/snapdragon-node/-/snapdragon-node-2.1.1.tgz"
+  resolved "https://registry.npmjs.org/snapdragon-node/-/snapdragon-node-2.1.1.tgz"
   integrity sha512-O27l4xaMYt/RSQ5TR3vpWCAB5Kb/czIcqUFOM/C4fYcLnbZUc1PkjTAMjof2pBWaSTwOUd6qUHcFGVGj7aIwnw==
   dependencies:
     define-property "^1.0.0"
@@ -4917,14 +4917,14 @@ snapdragon-node@^2.0.1:
 
 snapdragon-util@^3.0.1:
   version "3.0.1"
-  resolved "https://npm.styque.de/snapdragon-util/-/snapdragon-util-3.0.1.tgz"
+  resolved "https://registry.npmjs.org/snapdragon-util/-/snapdragon-util-3.0.1.tgz"
   integrity sha512-mbKkMdQKsjX4BAL4bRYTj21edOf8cN7XHdYUJEe+Zn99hVEYcMvKPct1IqNe7+AZPirn8BCDOQBHQZknqmKlZQ==
   dependencies:
     kind-of "^3.2.0"
 
 snapdragon@^0.8.1:
   version "0.8.1"
-  resolved "https://npm.styque.de/snapdragon/-/snapdragon-0.8.1.tgz"
+  resolved "https://registry.npmjs.org/snapdragon/-/snapdragon-0.8.1.tgz"
   integrity sha1-4StUh/re0+PeoKyR6UAL91tAE3A=
   dependencies:
     base "^0.11.1"
@@ -4938,7 +4938,7 @@ snapdragon@^0.8.1:
 
 source-map-resolve@^0.5.0:
   version "0.5.1"
-  resolved "https://npm.styque.de/source-map-resolve/-/source-map-resolve-0.5.1.tgz"
+  resolved "https://registry.npmjs.org/source-map-resolve/-/source-map-resolve-0.5.1.tgz"
   integrity sha512-0KW2wvzfxm8NCTb30z0LMNyPqWCdDGE2viwzUaucqJdkTRXtZiSY3I+2A6nVAjmdOy0I4gU8DwnVVGsk9jvP2A==
   dependencies:
     atob "^2.0.0"
@@ -4957,12 +4957,12 @@ source-map-support@^0.5.17, source-map-support@^0.5.6:
 
 source-map-url@^0.4.0:
   version "0.4.0"
-  resolved "https://npm.styque.de/source-map-url/-/source-map-url-0.4.0.tgz"
+  resolved "https://registry.npmjs.org/source-map-url/-/source-map-url-0.4.0.tgz"
   integrity sha1-PpNdfd1zYxuXZZlW1VEo6HtQhKM=
 
 source-map@^0.5.0, source-map@^0.5.6:
   version "0.5.7"
-  resolved "https://npm.styque.de/source-map/-/source-map-0.5.7.tgz"
+  resolved "https://registry.npmjs.org/source-map/-/source-map-0.5.7.tgz"
   integrity sha1-igOdLRAh0i0eoUyA2OpGi6LvP8w=
 
 source-map@^0.6.0:
@@ -5013,7 +5013,7 @@ spdx-license-ids@^3.0.0:
 
 split-string@^3.0.1, split-string@^3.0.2:
   version "3.1.0"
-  resolved "https://npm.styque.de/split-string/-/split-string-3.1.0.tgz"
+  resolved "https://registry.npmjs.org/split-string/-/split-string-3.1.0.tgz"
   integrity sha512-NzNVhJDYpwceVVii8/Hu6DKfD2G+NrQHlS/V/qgv763EYudVwEcMQNxd2lh+0VrUByXN/oJkl5grOhYWvQUYiw==
   dependencies:
     extend-shallow "^3.0.0"
@@ -5050,7 +5050,7 @@ stack-utils@^1.0.1:
 
 static-extend@^0.1.1:
   version "0.1.2"
-  resolved "https://npm.styque.de/static-extend/-/static-extend-0.1.2.tgz"
+  resolved "https://registry.npmjs.org/static-extend/-/static-extend-0.1.2.tgz"
   integrity sha1-YICcOcv/VTNyJv1eC1IPNB8ftcY=
   dependencies:
     define-property "^0.2.5"
@@ -5102,7 +5102,7 @@ string-width@^1.0.1:
 
 "string-width@^1.0.2 || 2", string-width@^2.0.0, string-width@^2.1.1:
   version "2.1.1"
-  resolved "https://npm.styque.de/string-width/-/string-width-2.1.1.tgz"
+  resolved "https://registry.npmjs.org/string-width/-/string-width-2.1.1.tgz"
   integrity sha512-nOqH59deCq9SRHlxq1Aw85Jnt4w6KvLKqWVik6oA9ZklXLNIOlqg4F2yrT1MVaTjAqvVwdfeZ7w7aCvJD7ugkw==
   dependencies:
     is-fullwidth-code-point "^2.0.0"
@@ -5144,7 +5144,7 @@ strip-ansi@^3.0.0, strip-ansi@^3.0.1:
 
 strip-ansi@^4.0.0:
   version "4.0.0"
-  resolved "https://npm.styque.de/strip-ansi/-/strip-ansi-4.0.0.tgz"
+  resolved "https://registry.npmjs.org/strip-ansi/-/strip-ansi-4.0.0.tgz"
   integrity sha1-qEeQIusaw2iocTibY1JixQXuNo8=
   dependencies:
     ansi-regex "^3.0.0"
@@ -5170,7 +5170,7 @@ strip-bom@^4.0.0:
 
 strip-eof@^1.0.0:
   version "1.0.0"
-  resolved "https://npm.styque.de/strip-eof/-/strip-eof-1.0.0.tgz"
+  resolved "https://registry.npmjs.org/strip-eof/-/strip-eof-1.0.0.tgz"
   integrity sha1-u0P/VZim6wXYm1n80SnJgzE2Br8=
 
 strip-final-newline@^2.0.0:
@@ -5214,7 +5214,7 @@ supports-color@^2.0.0:
 
 supports-color@^5.2.0:
   version "5.2.0"
-  resolved "https://npm.styque.de/supports-color/-/supports-color-5.2.0.tgz"
+  resolved "https://registry.npmjs.org/supports-color/-/supports-color-5.2.0.tgz"
   integrity sha512-F39vS48la4YvTZUPVeTqsjsFNrvcMwrV3RLZINsmHo+7djCvuUzSIeXOnZ5hmjef4bajL1dNccN+tg5XAliO5Q==
   dependencies:
     has-flag "^3.0.0"
@@ -5353,14 +5353,14 @@ to-fast-properties@^2.0.0:
 
 to-object-path@^0.3.0:
   version "0.3.0"
-  resolved "https://npm.styque.de/to-object-path/-/to-object-path-0.3.0.tgz"
+  resolved "https://registry.npmjs.org/to-object-path/-/to-object-path-0.3.0.tgz"
   integrity sha1-KXWIt7Dn4KwI4E5nL4XB9JmeF68=
   dependencies:
     kind-of "^3.0.2"
 
 to-regex-range@^2.1.0:
   version "2.1.1"
-  resolved "https://npm.styque.de/to-regex-range/-/to-regex-range-2.1.1.tgz"
+  resolved "https://registry.npmjs.org/to-regex-range/-/to-regex-range-2.1.1.tgz"
   integrity sha1-fIDBe53+vlmeJzZ+DU3VWQFB2zg=
   dependencies:
     is-number "^3.0.0"
@@ -5375,7 +5375,7 @@ to-regex-range@^5.0.1:
 
 to-regex@^3.0.1:
   version "3.0.1"
-  resolved "https://npm.styque.de/to-regex/-/to-regex-3.0.1.tgz"
+  resolved "https://registry.npmjs.org/to-regex/-/to-regex-3.0.1.tgz"
   integrity sha1-FTWL7kosg712N3uh3ASdDxiDeq4=
   dependencies:
     define-property "^0.2.5"
@@ -5583,7 +5583,7 @@ undefsafe@^2.0.2:
 
 union-value@^1.0.0:
   version "1.0.0"
-  resolved "https://npm.styque.de/union-value/-/union-value-1.0.0.tgz"
+  resolved "https://registry.npmjs.org/union-value/-/union-value-1.0.0.tgz"
   integrity sha1-XHHDTLW61dzr4+oM0IIHulqhrqQ=
   dependencies:
     arr-union "^3.1.0"
@@ -5605,7 +5605,7 @@ unpipe@~1.0.0, unpipe@1.0.0:
 
 unset-value@^1.0.0:
   version "1.0.0"
-  resolved "https://npm.styque.de/unset-value/-/unset-value-1.0.0.tgz"
+  resolved "https://registry.npmjs.org/unset-value/-/unset-value-1.0.0.tgz"
   integrity sha1-g3aHP30jNRef+x5vw6jtDfyKtVk=
   dependencies:
     has-value "^0.3.1"
@@ -5646,7 +5646,7 @@ uri-js@^4.2.2:
 
 urix@^0.1.0:
   version "0.1.0"
-  resolved "https://npm.styque.de/urix/-/urix-0.1.0.tgz"
+  resolved "https://registry.npmjs.org/urix/-/urix-0.1.0.tgz"
   integrity sha1-2pN/emLiH+wf0Y1Js1wpNQZ6bHI=
 
 url-parse-lax@^1.0.0:
@@ -5658,7 +5658,7 @@ url-parse-lax@^1.0.0:
 
 use@^2.0.0:
   version "2.0.2"
-  resolved "https://npm.styque.de/use/-/use-2.0.2.tgz"
+  resolved "https://registry.npmjs.org/use/-/use-2.0.2.tgz"
   integrity sha1-riig1y+TvyJCKhii43mZMRLeyOg=
   dependencies:
     define-property "^0.2.5"
@@ -5777,7 +5777,7 @@ which-module@^2.0.0:
 
 which@^1.2.9:
   version "1.3.0"
-  resolved "https://npm.styque.de/which/-/which-1.3.0.tgz"
+  resolved "https://registry.npmjs.org/which/-/which-1.3.0.tgz"
   integrity sha512-xcJpopdamTuY5duC/KnTTNBraPK54YwpenP4lzxU8H91GudWpFv38u0CKjclE1Wi2EH2EDz5LRcHcKbCIzqGyg==
   dependencies:
     isexe "^2.0.0"
@@ -5909,7 +5909,7 @@ y18n@^4.0.0:
 
 yallist@^2.1.2:
   version "2.1.2"
-  resolved "https://npm.styque.de/yallist/-/yallist-2.1.2.tgz"
+  resolved "https://registry.npmjs.org/yallist/-/yallist-2.1.2.tgz"
   integrity sha1-HBH5IY8HYImkfdUS+TxmmaaoHVI=
 
 yallist@^3.0.0, yallist@^3.0.3:
