@@ -2,6 +2,7 @@
   "compilerOptions": {
     "module": "commonjs",
     "declaration": false,
+    "strict": false,
     "noImplicitAny": false,
     "removeComments": true,
     "noLib": false,
@@ -11,7 +12,8 @@
     "target": "es6",
     "sourceMap": true,
     "allowJs": true,
-    "outDir": "./dist"
+    "outDir": "./dist",
+    "types": ["node", "jest"]
   },
     "include": [
     "src/**/*"
