@@ -12,14 +12,16 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
         function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
         function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ArticleService = void 0;
 const common_1 = require("@nestjs/common");
 const typeorm_1 = require("@nestjs/typeorm");
 const typeorm_2 = require("typeorm");
@@ -37,7 +39,7 @@ let ArticleService = class ArticleService {
     }
     findAll(query) {
         return __awaiter(this, void 0, void 0, function* () {
-            const qb = yield typeorm_2.getRepository(article_entity_1.ArticleEntity)
+            const qb = yield this.articleRepository
                 .createQueryBuilder('article')
                 .leftJoinAndSelect('article.author', 'author');
             qb.where("1 = 1");
@@ -45,11 +47,11 @@ let ArticleService = class ArticleService {
                 qb.andWhere("article.tagList LIKE :tag", { tag: `%${query.tag}%` });
             }
             if ('author' in query) {
-                const author = yield this.userRepository.findOne({ username: query.author });
+                const author = yield this.userRepository.findOneBy({ username: query.author });
                 qb.andWhere("article.authorId = :id", { id: author.id });
             }
             if ('favorited' in query) {
-                const author = yield this.userRepository.findOne({ username: query.favorited });
+                const author = yield this.userRepository.findOneBy({ username: query.favorited });
                 const ids = author.favorites.map(el => el.id);
                 qb.andWhere("article.authorId IN (:ids)", { ids });
             }
@@ -67,12 +69,12 @@ let ArticleService = class ArticleService {
     }
     findFeed(userId, query) {
         return __awaiter(this, void 0, void 0, function* () {
-            const _follows = yield this.followsRepository.find({ followerId: userId });
+            const _follows = yield this.followsRepository.findBy({ followerId: userId });
             if (!(Array.isArray(_follows) && _follows.length > 0)) {
                 return { articles: [], articlesCount: 0 };
             }
             const ids = _follows.map(el => el.followingId);
-            const qb = yield typeorm_2.getRepository(article_entity_1.ArticleEntity)
+            const qb = yield this.articleRepository
                 .createQueryBuilder('article')
                 .where('article.authorId IN (:ids)', { ids });
             qb.orderBy('article.created', 'DESC');
@@ -89,13 +91,13 @@ let ArticleService = class ArticleService {
     }
     findOne(where) {
         return __awaiter(this, void 0, void 0, function* () {
-            const article = yield this.articleRepository.findOne(where);
+            const article = yield this.articleRepository.findOneBy(where);
             return { article };
         });
     }
     addComment(slug, commentData) {
         return __awaiter(this, void 0, void 0, function* () {
-            let article = yield this.articleRepository.findOne({ slug });
+            let article = yield this.articleRepository.findOneBy({ slug });
             const comment = new comment_entity_1.Comment();
             comment.body = commentData.body;
             article.comments.push(comment);
@@ -106,8 +108,8 @@ let ArticleService = class ArticleService {
     }
     deleteComment(slug, id) {
         return __awaiter(this, void 0, void 0, function* () {
-            let article = yield this.articleRepository.findOne({ slug });
-            const comment = yield this.commentRepository.findOne(id);
+            let article = yield this.articleRepository.findOneBy({ slug });
+            const comment = yield this.commentRepository.findOneBy({ id: Number(id) });
             const deleteIndex = article.comments.findIndex(_comment => _comment.id === comment.id);
             if (deleteIndex >= 0) {
                 const deleteComments = article.comments.splice(deleteIndex, 1);
@@ -122,8 +124,8 @@ let ArticleService = class ArticleService {
     }
     favorite(id, slug) {
         return __awaiter(this, void 0, void 0, function* () {
-            let article = yield this.articleRepository.findOne({ slug });
-            const user = yield this.userRepository.findOne(id);
+            let article = yield this.articleRepository.findOneBy({ slug });
+            const user = yield this.userRepository.findOneBy({ id });
             const isNewFavorite = user.favorites.findIndex(_article => _article.id === article.id) < 0;
             if (isNewFavorite) {
                 user.favorites.push(article);
@@ -136,8 +138,8 @@ let ArticleService = class ArticleService {
     }
     unFavorite(id, slug) {
         return __awaiter(this, void 0, void 0, function* () {
-            let article = yield this.articleRepository.findOne({ slug });
-            const user = yield this.userRepository.findOne(id);
+            let article = yield this.articleRepository.findOneBy({ slug });
+            const user = yield this.userRepository.findOneBy({ id });
             const deleteIndex = user.favorites.findIndex(_article => _article.id === article.id);
             if (deleteIndex >= 0) {
                 user.favorites.splice(deleteIndex, 1);
@@ -150,7 +152,7 @@ let ArticleService = class ArticleService {
     }
     findComments(slug) {
         return __awaiter(this, void 0, void 0, function* () {
-            const article = yield this.articleRepository.findOne({ slug });
+            const article = yield this.articleRepository.findOneBy({ slug });
             return { comments: article.comments };
         });
     }
@@ -163,20 +165,15 @@ let ArticleService = class ArticleService {
             article.tagList = articleData.tagList || [];
             article.comments = [];
             const newArticle = yield this.articleRepository.save(article);
-            const author = yield this.userRepository.findOne({ where: { id: userId } });
-            if (Array.isArray(author.articles)) {
-                author.articles.push(article);
-            }
-            else {
-                author.articles = [article];
-            }
+            const author = yield this.userRepository.findOne({ where: { id: userId }, relations: ['articles'] });
+            author.articles.push(article);
             yield this.userRepository.save(author);
             return newArticle;
         });
     }
     update(slug, articleData) {
         return __awaiter(this, void 0, void 0, function* () {
-            let toUpdate = yield this.articleRepository.findOne({ slug: slug });
+            let toUpdate = yield this.articleRepository.findOneBy({ slug: slug });
             let updated = Object.assign(toUpdate, articleData);
             const article = yield this.articleRepository.save(updated);
             return { article };
@@ -191,16 +188,16 @@ let ArticleService = class ArticleService {
         return slug(title, { lower: true }) + '-' + (Math.random() * Math.pow(36, 6) | 0).toString(36);
     }
 };
-ArticleService = __decorate([
-    common_1.Injectable(),
-    __param(0, typeorm_1.InjectRepository(article_entity_1.ArticleEntity)),
-    __param(1, typeorm_1.InjectRepository(comment_entity_1.Comment)),
-    __param(2, typeorm_1.InjectRepository(user_entity_1.UserEntity)),
-    __param(3, typeorm_1.InjectRepository(follows_entity_1.FollowsEntity)),
+exports.ArticleService = ArticleService;
+exports.ArticleService = ArticleService = __decorate([
+    (0, common_1.Injectable)(),
+    __param(0, (0, typeorm_1.InjectRepository)(article_entity_1.ArticleEntity)),
+    __param(1, (0, typeorm_1.InjectRepository)(comment_entity_1.Comment)),
+    __param(2, (0, typeorm_1.InjectRepository)(user_entity_1.UserEntity)),
+    __param(3, (0, typeorm_1.InjectRepository)(follows_entity_1.FollowsEntity)),
     __metadata("design:paramtypes", [typeorm_2.Repository,
         typeorm_2.Repository,
         typeorm_2.Repository,
         typeorm_2.Repository])
 ], ArticleService);
-exports.ArticleService = ArticleService;
 //# sourceMappingURL=article.service.js.map
