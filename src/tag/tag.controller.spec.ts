@@ -1,3 +1,4 @@
+import { jest } from '@jest/globals';
 import { Test } from '@nestjs/testing';
 import { TagController } from './tag.controller';
 import { TagService } from './tag.service';
