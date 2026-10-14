@@ -12,7 +12,9 @@
     "target": "es6",
     "sourceMap": true,
     "allowJs": true,
+    "skipLibCheck": true,
     "outDir": "./dist",
+    "rootDir": "./src",
     "types": ["node", "jest"]
   },
     "include": [
