@@ -12,14 +12,16 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
         function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
         function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.UserService = void 0;
 const common_1 = require("@nestjs/common");
 const typeorm_1 = require("@nestjs/typeorm");
 const typeorm_2 = require("typeorm");
@@ -27,8 +29,6 @@ const user_entity_1 = require("./user.entity");
 const jwt = require('jsonwebtoken');
 const config_1 = require("../config");
 const class_validator_1 = require("class-validator");
-const http_exception_1 = require("@nestjs/common/exceptions/http.exception");
-const common_2 = require("@nestjs/common");
 const argon2 = require("argon2");
 let UserService = class UserService {
     constructor(userRepository) {
@@ -39,9 +39,9 @@ let UserService = class UserService {
             return yield this.userRepository.find();
         });
     }
-    findOne({ email, password }) {
-        return __awaiter(this, void 0, void 0, function* () {
-            const user = yield this.userRepository.findOne({ email });
+    findOne(_a) {
+        return __awaiter(this, arguments, void 0, function* ({ email, password }) {
+            const user = yield this.userRepository.findOneBy({ email });
             if (!user) {
                 return null;
             }
@@ -54,24 +54,24 @@ let UserService = class UserService {
     create(dto) {
         return __awaiter(this, void 0, void 0, function* () {
             const { username, email, password } = dto;
-            const qb = yield typeorm_2.getRepository(user_entity_1.UserEntity)
+            const qb = yield this.userRepository
                 .createQueryBuilder('user')
                 .where('user.username = :username', { username })
                 .orWhere('user.email = :email', { email });
             const user = yield qb.getOne();
             if (user) {
                 const errors = { username: 'Username and email must be unique.' };
-                throw new http_exception_1.HttpException({ message: 'Input data validation failed', errors }, common_2.HttpStatus.BAD_REQUEST);
+                throw new common_1.HttpException({ message: 'Input data validation failed', errors }, common_1.HttpStatus.BAD_REQUEST);
             }
             let newUser = new user_entity_1.UserEntity();
             newUser.username = username;
             newUser.email = email;
             newUser.password = password;
             newUser.articles = [];
-            const errors = yield class_validator_1.validate(newUser);
+            const errors = yield (0, class_validator_1.validate)(newUser);
             if (errors.length > 0) {
                 const _errors = { username: 'Userinput is not valid.' };
-                throw new http_exception_1.HttpException({ message: 'Input data validation failed', _errors }, common_2.HttpStatus.BAD_REQUEST);
+                throw new common_1.HttpException({ message: 'Input data validation failed', _errors }, common_1.HttpStatus.BAD_REQUEST);
             }
             else {
                 const savedUser = yield this.userRepository.save(newUser);
@@ -81,7 +81,7 @@ let UserService = class UserService {
     }
     update(id, dto) {
         return __awaiter(this, void 0, void 0, function* () {
-            let toUpdate = yield this.userRepository.findOne(id);
+            let toUpdate = yield this.userRepository.findOneBy({ id });
             delete toUpdate.password;
             delete toUpdate.favorites;
             let updated = Object.assign(toUpdate, dto);
@@ -95,17 +95,17 @@ let UserService = class UserService {
     }
     findById(id) {
         return __awaiter(this, void 0, void 0, function* () {
-            const user = yield this.userRepository.findOne(id);
+            const user = yield this.userRepository.findOneBy({ id });
             if (!user) {
                 const errors = { User: ' not found' };
-                throw new http_exception_1.HttpException({ errors }, 401);
+                throw new common_1.HttpException({ errors }, 401);
             }
             return this.buildUserRO(user);
         });
     }
     findByEmail(email) {
         return __awaiter(this, void 0, void 0, function* () {
-            const user = yield this.userRepository.findOne({ email: email });
+            const user = yield this.userRepository.findOneBy({ email: email });
             return this.buildUserRO(user);
         });
     }
@@ -133,10 +133,10 @@ let UserService = class UserService {
         return { user: userRO };
     }
 };
-UserService = __decorate([
-    common_1.Injectable(),
-    __param(0, typeorm_1.InjectRepository(user_entity_1.UserEntity)),
+exports.UserService = UserService;
+exports.UserService = UserService = __decorate([
+    (0, common_1.Injectable)(),
+    __param(0, (0, typeorm_1.InjectRepository)(user_entity_1.UserEntity)),
     __metadata("design:paramtypes", [typeorm_2.Repository])
 ], UserService);
-exports.UserService = UserService;
 //# sourceMappingURL=user.service.js.map
