@@ -2,7 +2,6 @@ import { jest } from '@jest/globals';
 import { Test } from '@nestjs/testing';
 import { TagController } from './tag.controller';
 import { TagService } from './tag.service';
-import {getRepositoryToken} from "@nestjs/typeorm";
 import {TagEntity} from "./tag.entity";
 
 describe('TagController', () => {
@@ -13,10 +12,9 @@ describe('TagController', () => {
     const module = await Test.createTestingModule({
       controllers: [TagController],
       providers: [
-        TagService,
         {
-          provide: getRepositoryToken(TagEntity),
-          useValue: {},
+          provide: TagService,
+          useValue: { findAll: jest.fn() },
         },
       ],
     }).compile();
